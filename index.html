@@ -5719,6 +5719,10 @@ mounted() {
     console.log('window.BOT_TOKEN:', window.BOT_TOKEN ? '✅' : '❌');
     console.log('window.FIREBASE_CONFIG:', window.FIREBASE_CONFIG ? '✅' : '❌');
     console.log('window.BOT_USERNAME:', window.BOT_USERNAME);
+
+    console.log('=== VUE APP MOUNTED ===');
+    console.log('Vue получил adminId:', this.adminId);
+    console.log('Vue получил firebaseConfig:', this.firebaseConfig);
     
     if (!this.adminId && window.ADMIN_ID) {
         console.log('🔄 Копируем adminId из window:', window.ADMIN_ID);
